@@ -16,14 +16,13 @@ If they manage not to get tired and fall asleep while doing their chores, they h
 
 
 Here is my explanation of how I wrote my code:
-
 1. Each chore function will simulate an arbitrary completion time - setTimeout()
-2. The persons gets increasingly tired and each task has a chance of failure - Math.random()
+2. The person gets increasingly tired and each task has a chance of failure - Math.random()
 3. All the functions are nested and this forms the callback sequence.
 4. If the person falls asleep the chores stop.
 
 
 To run the code:
-Open Visual Studio
-Make sure the profile of the open terminal is set to powershell
-In the terminal of VSC TYPE: node callbackVersion.js
+1. Open Visual Studio
+2. Make sure the profile of the open terminal is set to powershell
+3. In the terminal of VSC TYPE: node callbackVersion.js
