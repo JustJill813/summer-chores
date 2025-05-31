@@ -1,13 +1,13 @@
 function mowYard(name, callback) {
     setTimeout(() => {
         console.log(`${name} mowed the yard.`);
-        callback(true); // Always succeeds
+        callback(true); 
     }, 2000);
 }
 
 function weedEat(name, callback) {
     setTimeout(() => {
-        if (Math.random() > 0.2) { // 80% chance of success
+        if (Math.random() > 0.2) { 
             console.log(`${name} finished using the weed eater.`);
             callback(true);
         } else {
@@ -19,7 +19,7 @@ function weedEat(name, callback) {
 
 function trimHedges(name, callback) {
     setTimeout(() => {
-        if (Math.random() > 0.3) { // 70% chance of success
+        if (Math.random() > 0.3) {
             console.log(`${name} finished trimming the hedges.`);
             callback(true);
         } else {
@@ -31,7 +31,7 @@ function trimHedges(name, callback) {
 
 function collectWood(name, callback) {
     setTimeout(() => {
-        if (Math.random() > 0.4) { // 60% chance of success
+        if (Math.random() > 0.4) { 
             console.log(`${name} finished collecting wood.`);
             callback(true);
         } else {
@@ -43,7 +43,7 @@ function collectWood(name, callback) {
 
 function waterGarden(name, callback) {
     setTimeout(() => {
-        if (Math.random() > 0.5) { // 50% chance of success
+        if (Math.random() > 0.5) { 
             console.log(`${name} finished watering the garden.`);
             console.log(`${name} finished all their chores!`);
             callback(true);
