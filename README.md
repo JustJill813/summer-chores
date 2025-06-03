@@ -15,14 +15,26 @@ If they manage not to get tired and fall asleep while doing their chores, they h
 
 
 
-Here is my explanation of how I wrote my code:
+Here is my explanation of how I wrote my code using Callbacks:
+
 1. Each chore function will simulate an arbitrary completion time - setTimeout()
 2. The person gets increasingly tired and each task has a chance of failure - Math.random()
 3. All the functions are nested and this forms the callback sequence.
-4. If the person falls asleep the chores stop.
+4. This is called Callback Hell - it makes the code harder to read
+5. If the person falls asleep the chores stop.
+
+
+Here is my explanation of how I wrote my code using Promises:
+
+1. Each function returns a Promise instead of callbacks.
+2. If the chore succeeds, the Promise resloves and if it fails, it rejects.
+3. the doSummerChores function chains each Promise using .then().
+4. If any Promise rejects, .catch() makes sure proper error handling is used.
+5. Using Promises improves raedability and makes the code easier to follow and manage.
 
 
 To run the code:
 1. Open Visual Studio
 2. Make sure the profile of the open terminal is set to powershell
 3. In the terminal of VSC TYPE: node callbackVersion.js
+4. In the terminal of VSC TYPE: node promiseVersion.js
