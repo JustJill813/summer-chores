@@ -23,6 +23,7 @@ Here is my explanation of how I wrote my code using Callbacks:
 5. If the person falls asleep the chores stop.
 
 
+
 Here is my explanation of how I wrote my code using Promises:
 1. Each function now returns a Promise instead of a Callback.
 2. If the chore succeds, the Promise resloves.
@@ -30,6 +31,19 @@ Here is my explanation of how I wrote my code using Promises:
 4. The doSummerChores function chains each Promise using .then().
 5. If any promise rejects, .catch() makes sure the error is handled correctly.
 6. Using Promises makes the code easier to read and manage.
+
+
+
+Here is my explanation of how I wrote my code using Async and Await:
+1. Each function now uses Async/Await instead of Promises.
+2. Each chore prints a success message after completion.
+3. A try...catch block is used to handle errors.
+4. If a chore fails, the function doesn't stop.
+5. This way 'Jill' can continue do ing the next chore.
+6. This ensures clear output and handles failures.
+7. This keeps the flow sequential.
+8. When using Async/Await there is less nesting and .then() chains are avoided making the code cleaner.
+
 
 
 
