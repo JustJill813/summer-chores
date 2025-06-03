@@ -52,3 +52,5 @@ To run the code:
 2. Make sure the profile of the open terminal is set to powershell
 3. In the terminal of VSC TYPE: node callbackVersion.js
 4. In the terminal of VSC TYPE: node promiseVersion.js
+5. In the termianl of VSC TYPE: node asyncAwaitVersion.js
+
